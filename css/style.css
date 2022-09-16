@@ -1,0 +1,57 @@
+header{
+    background-color: #202020;
+    height: 100px;
+    color: white;
+}
+header h1{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.line{
+    height: 10px;
+    background-color: #4169E1;
+}
+main{
+    padding-top: 112px;
+    padding-bottom: 192px;
+    text-align: center;
+}
+main h1{
+    color: #063ad2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+main input{
+    width: 300px;
+    height: 40px;
+}
+main .user{
+    margin-bottom: 10px;
+}
+main .e-s{
+    padding-top: 10px;
+}
+main .e-s a{
+    text-decoration: none;
+}
+main .login{
+    background-color: #063ad2;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+main .nova{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(11, 94, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+footer{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    background-color: #202020;
+    height: 120px;
+}
