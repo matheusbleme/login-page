@@ -1,15 +1,6 @@
-header{
-    background-color: #202020;
-    height: 100px;
-    color: white;
-}
-header h1{
-    padding-top: 20px;
-    padding-left: 50px;
-}
-.line{
-    height: 10px;
-    background-color: #4169E1;
+html body{
+    height: 100%;
+    overflow: hidden;
 }
 main{
     padding-top: 112px;
@@ -18,8 +9,8 @@ main{
 }
 main h1{
     color: #063ad2;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 main input{
     width: 300px;
@@ -47,11 +38,5 @@ main .nova{
     color: white;
     border: none;
     border-radius: 5px;
-}
-footer{
-    padding-top: 50px;
-    text-align: center;
-    color: white;
-    background-color: #202020;
-    height: 120px;
+    margin-bottom: 10px;
 }
