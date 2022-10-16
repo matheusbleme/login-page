@@ -2,14 +2,6 @@ main{
     text-align: center;
     margin-top: 80px;
 }
-main .text{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 470px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: #063ad2;
-    color: white;
-}
 main .titulo{
     padding-top: 35px;
     padding-bottom: 35px;
@@ -19,26 +11,41 @@ main .titulo{
 main p{
     padding-top: 10px;
 }
-main .criar{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-top: 80px;
-    height: 470px;
-    background-color: white;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+main h1{
+    color: #063ad2;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-main .criar h1{
-    font-size: 30px;
-    padding-bottom: 20px;
+main h2{
+    font-size: 25px;
 }
 main .criar input{
+    outline: none;
     margin-bottom: 10px;
     width: 300px;
     height: 40px;
 }
 main .criar .botao{
-    margin-top: 20px;
     background-color: #063ad2;
     color: white;
     border: none;
+}
+#termos{
+    height: 20px;
+    width: 20px;
+}
+.termos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.termos p{
+    padding-left: 8px;
+    padding-bottom: 4px;
+}
+.termos a{
+    padding-left: 4px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #063ad2;
 }
