@@ -20,14 +20,30 @@
                         <form>
                             <h1>Criar nova senha</h1>
                             <hr>
-                            <input type="password" placeholder="Nova senha"><br>
-                            <input type="password" placeholder="Confirmar nova senha"><br>
+
+                            <input type="password" placeholder="Nova senha" id="senha"><br>
+
+                            <input type="password" placeholder="Confirmar nova senha" id="conf-senha"><br>
+
                             <a href="login.html"><input type="button" value="Redefinir senha" class="confirmar"></a>
+                            <div class="mensagem" id="mensagem">As senhas não conferem</div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            let senha = document.querySelector('#senha')
+            let confsenha = document.querySelector('#conf-senha')
+
+            confsenha.addEventListener('keyup', () =>{
+                if (senha.value != confsenha.value){
+                    document.getElementById('mensagem').style.display = 'block';
+                } else {
+                    document.getElementById('mensagem').style.display = 'none';
+                }
+            })
+        </script>
     </main>
 </body>
 </html>

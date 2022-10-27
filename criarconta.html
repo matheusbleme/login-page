@@ -18,10 +18,10 @@
                 <div class="col-md-12 col-sm-12 col-lg-12 criar">
                     <h1><b>Meet In</b></h1>
                     <form action="..." method="get">
-                        <input type="text" name="nome" placeholder="Nome"><br>
-                        <input type="text" name="usuário" placeholder="Nome de usuário"><br>
                         <input type="text" name="email" placeholder="Email"><br>
-                        <input type="password" name="senha" placeholder="Senha"><br>
+                        <input type="password" placeholder="Senha" id="senha"><br>
+                        <input type="password" placeholder="Confirmar senha" id="conf-senha"> <br>
+                        <div class="mensagem" id="mensagem">As senhas não conferem</div>
                         <div class="termos">
                             <input type="checkbox" name="termos" id="termos">
                             <p>Li e aceito os</p> <a href="...">Termos e Condições</a> <br>
@@ -34,5 +34,17 @@
             </div>
         </div>
     </main>
+    <script>
+        let senha = document.querySelector('#senha')
+        let confsenha = document.querySelector('#conf-senha')
+
+        confsenha.addEventListener('keyup', () =>{
+            if (senha.value != confsenha.value){
+                document.getElementById('mensagem').style.display = 'block';
+            } else {
+                document.getElementById('mensagem').style.display = 'none';
+            }
+        })
+    </script>
 </body>
 </html>
